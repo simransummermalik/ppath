@@ -1,0 +1,17 @@
+{
+  "study_id": "gse50760-pathway-provenance-demo",
+  "title": "Organism-aware pathway provenance demonstration",
+  "organism": "hsa",
+  "organism_name": "Homo sapiens",
+  "gene_id_column": "gene_id",
+  "control_columns": ["normal_1", "normal_2"],
+  "case_columns": ["primary_1", "primary_2"],
+  "control_label": "normal",
+  "case_label": "primary tumor",
+  "pseudocount": 0.25,
+  "minimum_absolute_log2_fold_change": 1.0,
+  "fdr_threshold": 0.1,
+  "mapping_snapshot": "demo-curation-2026-07-18",
+  "disclaimer": "Educational demonstration only; not for clinical decision-making."
+}
+

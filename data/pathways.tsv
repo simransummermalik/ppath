@@ -1,0 +1,9 @@
+organism	pathway_id	pathway_name	entrez_ids
+hsa	hsa04110	Cell cycle	7157;4288;4609;983;1019
+hsa	hsa04115	p53 signaling pathway	7157;581;596;4288;1026
+hsa	hsa05200	Pathways in cancer	1956;7157;4318;7421;999;1277
+hsa	hsa04520	Adherens junction	999;1956;7421;1499
+hsa	hsa04010	MAPK signaling pathway	1956;7157;4318;596;5594
+hsa	hsa99999	Unmeasured control pathway	90001;90002;90003
+mmu	mmu04110	Cell cycle	22059;12534;17345
+

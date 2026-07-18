@@ -1,0 +1,8 @@
+.DS_Store
+.opam-root/
+_opam/
+build/
+vendor/pp/
+__pycache__/
+*.pyc
+

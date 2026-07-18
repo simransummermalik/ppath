@@ -1,0 +1,15 @@
+organism	input_id	entrez_id	symbol	mapping_status	source
+hsa	TP53	7157	TP53	exact	NCBI-demo-snapshot
+hsa	MKI67	4288	MKI67	exact	NCBI-demo-snapshot
+hsa	EGFR	1956	EGFR	exact	NCBI-demo-snapshot
+hsa	CDH1	999	CDH1	exact	NCBI-demo-snapshot
+hsa	VIM	7421	VIM	exact	NCBI-demo-snapshot
+hsa	MMP9	4318	MMP9	exact	NCBI-demo-snapshot
+hsa	COL1A1	1277	COL1A1	exact	NCBI-demo-snapshot
+hsa	BAX	581	BAX	exact	NCBI-demo-snapshot
+hsa	BCL2	596	BCL2	exact	NCBI-demo-snapshot
+hsa	TP53_ALT	7157	TP53	alias	NCBI-demo-snapshot
+hsa	AMBIG1	100	AMBIGA	alias	NCBI-demo-snapshot
+hsa	AMBIG1	101	AMBIGB	alias	NCBI-demo-snapshot
+mmu	Trp53	22059	Trp53	exact	NCBI-demo-snapshot
+
