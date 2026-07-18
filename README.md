@@ -67,25 +67,33 @@ Benjamini–Hochberg procedure.
 The final HTML report brings the mapping audit, gene-level results, and pathway
 results together in one place.
 
-## Where `pp` fits in
+## Why I used `pp`
 
-Python performs the tabular and statistical work. `pp` runs the workflow and
-tracks the identity of each computation.
+I could have written the entire project as one Python script, but the point was
+to find a meaningful use for a language my friend created. I wanted to see what
+`pp` would look like in the kind of bioinformatics work I already enjoy rather
+than using it for an example with no connection to my interests.
 
-This separation is deliberate. `ppath` is not trying to replace Python, R, or
-Bioconductor. Those ecosystems are where the scientific tools belong. `pp`
-adds a reproducibility layer around them:
+Bioinformatics workflows also happen to fit the ideas behind `pp`. An analysis
+usually has several connected stages, and changing one input should not require
+rerunning every unrelated piece. It is also useful to know exactly which code
+and data produced a result. Because `pp` is content-addressed, it treats a
+computation's code and inputs as part of that computation's identity.
 
-- a computation is identified by its code and inputs;
-- unchanged computations can be reused from the content-addressed store;
-- independent nodes can run in parallel;
-- effects such as running another program require explicit permission;
-- generated files can be reconstructed from stored results;
-- `pp why` can explain whether a node was reused or recomputed.
+For this project, that means `pp` can:
 
-In the included workflow, the mapping, gene analysis, pathway analysis, report,
-and manifest are separate cached nodes. Running the same study again performs a
-null reconciliation and starts no new analysis processes.
+- remember work that has already been completed;
+- reuse a result when its code and inputs have not changed;
+- run independent parts of the workflow in parallel;
+- require explicit permission before running programs or writing files;
+- reconstruct generated files from stored results;
+- explain with `pp why` why something was reused or calculated again.
+
+Python still handles the tables and statistics because it is a natural tool for
+that job. `pp` connects those Python operations into a reproducible workflow.
+The mapping, gene analysis, pathway analysis, report, and provenance manifest
+are separate cached computations, so repeating an unchanged study starts no new
+analysis processes.
 
 ## What is included
 
